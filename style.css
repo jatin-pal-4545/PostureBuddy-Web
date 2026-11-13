@@ -1295,3 +1295,19 @@ footer {
         width: 100%;
     }
 }
+
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #4da3ff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
