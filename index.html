@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#172F43">
+
+    <title>Posture Buddy | Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="auth-page">
+
+        <section class="auth-card">
+
+            <div class="auth-logo">
+                <div class="logo-icon">PB</div>
+                <h1>Posture Buddy</h1>
+                <p>Your personal AI posture companion</p>
+            </div>
+
+            <!-- LOGIN FORM -->
+            <form id="loginForm" class="auth-form">
+
+                <h2>Welcome back!</h2>
+                <p class="form-subtitle">Login to continue monitoring your posture.</p>
+
+                <label for="loginEmail">Email Address</label>
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="loginPassword">Password</label>
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <p id="loginMessage" class="form-message"></p>
+
+                <button type="submit" class="auth-button">
+                    Login
+                </button>
+
+                <p class="form-switch">
+                    Don't have an account?
+                    <button type="button" id="showSignup">Create Account</button>
+                </p>
+
+            </form>
+
+
+            <!-- SIGNUP FORM -->
+            <form id="signupForm" class="auth-form hidden">
+
+                <h2>Create your account</h2>
+                <p class="form-subtitle">Join Posture Buddy and improve your posture.</p>
+
+                <label for="signupName">Full Name</label>
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Enter your name"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="signupEmail">Email Address</label>
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="signupPassword">Password</label>
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="At least 6 characters"
+                    minlength="6"
+                    autocomplete="new-password"
+                    required
+                >
+
+                <label for="signupConfirmPassword">Confirm Password</label>
+                <input
+                    type="password"
+                    id="signupConfirmPassword"
+                    placeholder="Enter password again"
+                    autocomplete="new-password"
+                    required
+                >
+
+                <p id="signupMessage" class="form-message"></p>
+
+                <button type="submit" class="auth-button">
+                    Create Account
+                </button>
+
+                <p class="form-switch">
+                    Already have an account?
+                    <button type="button" id="showLogin">Login</button>
+                </p>
+
+            </form>
+
+            <footer class="auth-footer">
+                Posture Buddy © 2026
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="auth.js"></script>
+
+</body>
+</html>
